@@ -55,7 +55,7 @@ const Topic = () => {
                     <thead>
                         <tr>
                             <th scope="col">Topic</th>
-                            <th scope="col">Author</th>
+                            <th scope="col">Rate</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -63,7 +63,7 @@ const Topic = () => {
                             topicsByCategory.map(topic => 
                                 <tr key={topic._id} onClick={() => goToTopic(topic.slug)}>
                                     <th>{topic.title}</th>
-                                    <td>{topic.user.username}</td>
+                                    <td>{topic.content.split('<===>')[0]}</td>
                                 </tr>
                             )
                         }

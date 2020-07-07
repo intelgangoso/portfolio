@@ -42,7 +42,7 @@ export default function PostItem({post, onReply, className = '', canCreate = fal
                                     </div>
                                 }
                                 <div className="cooked">
-                                    <div className="text" dangerouslySetInnerHTML={{ __html: post.content }}></div>
+                                    <div className="text" dangerouslySetInnerHTML={{ __html: post.content.split('<===>')[1] }}></div>
                                 </div>
                                 <section className="post-menu-area">
                                     <nav className="post-controls">
