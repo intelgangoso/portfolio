@@ -14,7 +14,6 @@ export default function MyApp({ Component, pageProps }) {
             <Head>
                 <title>Crystel G.</title>
                 <link rel="icon" href="/crystel.png" />
-                <link rel="stylesheet" href="https://getbootstrap.com/docs/3.3/dist/css/bootstrap.min.css" />
             </Head>
             
             <Component {...pageProps} />

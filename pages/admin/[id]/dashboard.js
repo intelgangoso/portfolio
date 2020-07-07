@@ -19,7 +19,7 @@ const AdminDashboard = withAuth(() => {
                     <div className="col-md-12 my-5">
                         {
                             userPortfolios.map(p =>
-                                <div className="mb-5 col-md-6">
+                                <div className="mb-5 col-md-6 float-left">
                                     <Card key={p._id} className="mx-1">
                                         <Card.Header>{p.jobTitle}</Card.Header>
                                         <Card.Body>

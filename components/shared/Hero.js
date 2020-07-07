@@ -11,7 +11,7 @@ export default function Hero() {
                                 src="/crystel.png"></img>
                             </a>
                         </div>
-                        <h1 className="white hero-title my-5">
+                        <h1 className="white hero-title my-4">
                             <div className="tagline">
                                 <span>Hi, I'm Crystel.</span>
                                 <br />
@@ -24,16 +24,16 @@ export default function Hero() {
                                 <span>Developer.</span>
                             </div>
                         </h1>
-                        <h3 className="white hero-subtitle my-5">
+                        <h3 className="white hero-subtitle my-4">
                             I have been working as a developer for about 5 years. <br />
                             Worked for start-up and outsourcing companies.
                         </h3>
                     </div>
-                    <div className="col-md-6 text-left">
-                        <h3 className="white hero-title my-5">
+                    <div className="col-md-6 text-left float-left">
+                        <h3 className="white hero-title my-4">
                             What I do...
                         </h3>
-                        <div className="button-container my-5">
+                        <div className="button-container my-4">
                             <div className="mx-1">
                                 <a className="mr-5 d-inline-block text-center" href="">
                                     <i className="fa fa-code text-white" aria-hidden="true"></i>
@@ -68,11 +68,11 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 text-right">
-                        <h3 className="white hero-title my-5">
+                    <div className="col-md-6 text-right float-right">
+                        <h3 className="white hero-title my-4">
                             Follow me...
                         </h3>
-                        <div className="button-container my-5">
+                        <div className="button-container my-4">
                             <div className="mx-1">
                                 <a href="https://www.linkedin.com/in/intel-gangoso-b51b1a136/" className="mx-5 text-center">
                                     <i className="fa fa-linkedin-square text-white" aria-hidden="true"></i>

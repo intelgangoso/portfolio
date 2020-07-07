@@ -40,7 +40,7 @@ const AppNavbar = () => {
         <>
             <div className="navbar-wrapper">
                 <Navbar expand="lg" className="navbar-dark">
-                    <Navbar.Brand>
+                    <Navbar.Brand className="mr-auto">
                         <AppLink href="/" className="mr-3 navbar-brand font-weight-bold">
                             Crystel G
                         </AppLink>
@@ -60,15 +60,15 @@ const AppNavbar = () => {
                         </Nav>
                         {
                             hasResponse &&
-                            <Nav>
+                            <Nav id="basic-nav-dropdown">
                                 {
                                     user &&
                                     <>
-                                        <span className="nav-link mr-4">Welcome {user.username}</span>
+                                        <span className="nav-link mx-2">Welcome {user.username}</span>
                                             {
                                                 (user.role === 'admin') && 
                                                 <>
-                                                    <NavDropdown className="mr-4" title="Manage" id="basic-nav-dropdown">
+                                                    <NavDropdown className="mx-2" title="Manage">
                                                         <AppLink href="/experience/new" className="dropdown-item">
                                                             Create Portfolio
                                                         </AppLink>
@@ -79,7 +79,7 @@ const AppNavbar = () => {
                                                     </NavDropdown>
                                                 </>
                                             }
-                                        <AppLink href="/logout" className="mr-3 btn btn-danger">
+                                        <AppLink href="/logout" className="mx-2 btn btn-danger">
                                             Sign Out
                                         </AppLink>
                                     </>
