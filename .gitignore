@@ -3,9 +3,6 @@
 #connections
 /server/config/
 
-#fakeData
-/server/fakeDB/
-
 # dependencies
 /node_modules
 /.pnp
