@@ -837,8 +837,13 @@ html {
 }
 
 @media (min-width: 992px) {
-  .fj-hero {
+  .fj-hero,
+  .portfolio-app > .page-containers {
     height: calc(100vh - 144px);
+    overflow: auto;
+  }
+  .fj-hero + .page-containers {
+    height: 0;
   }
 }
 
@@ -864,6 +869,13 @@ html {
         }
       }
     }
+  }
+  .fj-hero,
+  .portfolio-app > .page-containers {
+    min-height: calc(100vh - 144px);
+  }
+  .fj-hero + .page-containers {
+    min-height: 0;
   }
 }
 

@@ -10,17 +10,17 @@ export default function BaseLayout({ children, page = '' }) {
         <div className="portfolio-app">
             <Navbar />
             {isHomepage() && <Hero />}
-            <div className="container">
-                {children}
+            <div className="page-containers">
+                <div className="container">
+                    {children}
+                </div>
             </div>
-            {isHomepage() &&
-                <footer id="sticky-footer" className="py-4 bg-black text-white-50 py-3">
-                    <div className="container text-center">
-                        <small>Copyright &copy; 2020 Crystel Gangoso</small>
-                    </div>
-                </footer>
-            }
             <ToastContainer />
+            <footer id="sticky-footer" className="py-4 bg-black text-white-50 py-3">
+                <div className="container text-center">
+                    <small>Copyright &copy; 2020 Crystel Gangoso</small>
+                </div>
+            </footer>
         </div>
     )
 }
