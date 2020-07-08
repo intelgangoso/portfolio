@@ -1,6 +1,6 @@
 import PortfolioForm from '@/components/forms/PortfolioForm';
-import { useCreatePortfolio } from '@/apollo/actions';
-import { useRouter } from 'next/router';
+import {useCreatePortfolio} from '@/apollo/actions';
+import {useRouter} from 'next/router';
 import withApollo from '@/hoc/withApollo';
 import withAuth from '@/hoc/withAuth';
 import BaseLayout from '@/layouts/BaseLayout';

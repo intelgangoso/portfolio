@@ -17,7 +17,15 @@ export default function Replier({isOpen, onClose, closeBtn: CloseBtn, onSubmit, 
             <div className="reply-area">
                 { replyTo &&
                     <div className="reply-to">
-                        Reply To: <span className="text ml-2">{replyTo}</span>
+                        { 
+                            !hasTitle && 
+                            'Comment To:'
+                        }
+                        { 
+                            hasTitle && 
+                            'Reply To:'
+                        }
+                        <span className="text ml-2">{replyTo}</span>
                     </div>
                 }
                 { hasTitle &&
@@ -46,7 +54,16 @@ export default function Replier({isOpen, onClose, closeBtn: CloseBtn, onSubmit, 
                             onClick={() => {
                                 onSubmit(reply, resetReplier);
                             }}
-                            className="btn btn-main bg-blue py-2 ttu">Reply</button>
+                            className="btn btn-main bg-blue py-2 ttu">
+                                { 
+                                    !hasTitle && 
+                                    'Comment'
+                                }
+                                { 
+                                    hasTitle && 
+                                    'Reply'
+                                }
+                            </button>
                         <CloseBtn />
                     </div>
                 </div>

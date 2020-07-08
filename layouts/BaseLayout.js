@@ -1,6 +1,6 @@
-import Navbar from "@/components/shared/Navbar";
-import Hero from "@/components/shared/Hero";
-import { ToastContainer } from 'react-toastify';
+import Navbar from '@/components/shared/Navbar';
+import Hero from '@/components/shared/Hero';
+import {ToastContainer} from 'react-toastify';
 
 export default function BaseLayout({ children, page = '' }) {
 

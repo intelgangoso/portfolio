@@ -1,16 +1,16 @@
-import { useState, useRef } from 'react';
+import {useState, useRef} from 'react';
 import BaseLayout from '@/layouts/BaseLayout';
 import {
     useGetTopicBySlug,
     useGetPostsByTopic,
     useGetUser,
-    useCreatePost } from '@/apollo/actions';
-import { useRouter } from 'next/router';
+    useCreatePost} from '@/apollo/actions';
+import {useRouter} from 'next/router';
 import withApollo from '@/hoc/withApollo';
-import { getDataFromTree } from '@apollo/react-ssr';
+import {getDataFromTree} from '@apollo/react-ssr';
 import PostItem from '@/components/forum/PostItem';
 import Replier from '@/components/shared/Replier';
-import { toast } from 'react-toastify';
+import {toast} from 'react-toastify';
 import AppPagination from '@/components/shared/Pagination';
 
 const useInitialData = (slug, pagination) => {
@@ -103,7 +103,7 @@ const Posts = ({posts, topic, user, fetchMore, ...pagination}) => {
         }
         { posts.map(post =>
           <div key={post._id} className="row">
-            <div className="col-md-9">
+            <div className="col-md-12">
               <PostItem
                 post={post}
                 canCreate={user !== null}
@@ -118,7 +118,7 @@ const Posts = ({posts, topic, user, fetchMore, ...pagination}) => {
         }
       </div>
       <div className="row mt-2 mx-0">
-        <div className="col-md-9">
+        <div className="col-md-12 p-0">
           <div className="posts-bottom">
             { user &&
               <div className="pt-2 pb-2">
@@ -128,12 +128,12 @@ const Posts = ({posts, topic, user, fetchMore, ...pagination}) => {
                     setReplierOpen(true);
                   }}
                   className="btn btn-lg btn-outline-primary">
-                  Create New Post
+                  Comment to post
                 </button>
               </div>
             }
             {
-              !pagination.pageSize >= 11 &&
+              posts.length > 5 &&
               <div className="pagination-container ml-auto">
                 <AppPagination {...pagination} />
               </div>

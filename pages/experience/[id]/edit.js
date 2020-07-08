@@ -3,8 +3,8 @@ import withApollo from '@/hoc/withApollo';
 import withAuth from '@/hoc/withAuth';
 import BaseLayout from '@/layouts/BaseLayout';
 import {useRouter} from 'next/router';
-import { useGetPortfolio, useUpdatePortfolio } from '@/apollo/actions';
-import { toast } from 'react-toastify';
+import {useGetPortfolio, useUpdatePortfolio} from '@/apollo/actions';
+import {toast} from 'react-toastify';
 
 const PortfolioEdit = withAuth(() => {
     const router = useRouter();

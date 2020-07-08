@@ -1,6 +1,6 @@
 import withApollo from 'next-with-apollo';
-import ApolloClient, { InMemoryCache } from 'apollo-boost';
-import { ApolloProvider } from '@apollo/react-hooks';
+import ApolloClient, { InMemoryCache} from 'apollo-boost';
+import {ApolloProvider} from '@apollo/react-hooks';
 import moment from 'moment';
 
 export default withApollo(

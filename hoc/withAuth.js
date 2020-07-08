@@ -1,6 +1,6 @@
-import {useGetUser} from "@/apollo/actions";
-import Redirect from "@/components/shared/Redirect";
-import WaitLoader from "@/components/shared/Loader";
+import {useGetUser} from '@/apollo/actions';
+import Redirect from '@/components/shared/Redirect';
+import WaitLoader from '@/components/shared/Loader';
 
 export default (WrappedComponent, role, options = {ssr: false}) => {
     function WithAuth(props) {

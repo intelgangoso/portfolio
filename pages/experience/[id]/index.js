@@ -1,4 +1,4 @@
-import { useGetPortfolio } from '@/apollo/actions';
+import {useGetPortfolio} from '@/apollo/actions';
 import withApollo from '@/hoc/withApollo';
 import {getDataFromTree} from '@apollo/react-ssr';
 import BaseLayout from '@/layouts/BaseLayout';

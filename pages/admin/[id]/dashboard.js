@@ -3,7 +3,7 @@ import withAuth from '@/hoc/withAuth';
 import BaseLayout from '@/layouts/BaseLayout';
 import {Card, Button} from 'react-bootstrap';
 import {useGetUserPortfolios, useDeletePortfolio} from '@/apollo/actions';
-import { getDataFromTree } from 'react-apollo';
+import {getDataFromTree} from 'react-apollo';
 import Link from 'next/link';
 import {formatDate} from '@/utils/functions';
 

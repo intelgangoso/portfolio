@@ -1,4 +1,4 @@
-import { useForm } from "react-hook-form";
+import {useForm} from 'react-hook-form';
 
 export default function LoginForm({ onSubmit, loading }) {
     const { handleSubmit, register } = useForm();

@@ -1,5 +1,5 @@
-import { useQuery, useMutation, useLazyQuery } from '@apollo/react-hooks';
-import { GET_PORTFOLIOS,
+import {useQuery, useMutation, useLazyQuery} from '@apollo/react-hooks';
+import {GET_PORTFOLIOS,
     GET_PORTFOLIO,
     GET_USER_PORTFOLIOS,  
     CREATE_PORTFOLIO, 
@@ -13,7 +13,7 @@ import { GET_PORTFOLIOS,
     CREATE_TOPIC,
     TOPIC_BY_SLUG,
     POSTS_BY_TOPIC,
-    CREATE_POST } from '@/apollo/queries';
+    CREATE_POST} from '@/apollo/queries';
 
 //AUTHENTICATION ACTIONS
 export const useSignIn = () => useMutation(SIGN_IN, {

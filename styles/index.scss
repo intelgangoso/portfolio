@@ -107,7 +107,7 @@ html {
 }
 
 .cooked {
-  padding: 0 11px 0.25em 11px;
+  padding: 0.5em 11px 0;
   line-height: 1.6;
 }
   
@@ -410,6 +410,7 @@ html {
 }
   
 .fj-post-list {
+  overflow: hidden;
 
   .topic-parent {
 

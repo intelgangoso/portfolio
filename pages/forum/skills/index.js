@@ -1,7 +1,7 @@
 import BaseLayout from '@/layouts/BaseLayout';
 import {useGetForumCategories} from '@/apollo/actions';
 import withApollo from '@/hoc/withApollo';
-import { getDataFromTree } from 'react-apollo';
+import {getDataFromTree} from 'react-apollo';
 import Link from 'next/link';
 
 const Categories = () => {

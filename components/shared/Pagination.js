@@ -1,5 +1,4 @@
-import {useState} from 'react';
-import Pagination from "react-js-pagination";
+import Pagination from 'react-js-pagination';
 
 export default function AppPagination({count, pageSize, pageNum, onPageChange}) {
 
