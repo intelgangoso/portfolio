@@ -15,7 +15,7 @@ export default withApollo(
         });
       },
       // uri: 'http://localhost:3000/graphql',
-      uri: 'http://206.189.85.50:3000',
+      uri: 'http://206.189.85.50:3000/graphql',
       cache: new InMemoryCache().restore(initialState || {}),
       resolvers: {
         Portfolio: {
