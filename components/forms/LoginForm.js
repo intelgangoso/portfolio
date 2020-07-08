@@ -1,4 +1,5 @@
 import {useForm} from 'react-hook-form';
+import WaitLoader from '@/components/shared/Loader';
 
 export default function LoginForm({ onSubmit, loading }) {
     const { handleSubmit, register } = useForm();
@@ -26,16 +27,19 @@ export default function LoginForm({ onSubmit, loading }) {
                     />
                 </div>
                 {
-                    loading &&
-                    'Signing in...'
-                }
-                {
                     !loading &&
                     <button type="submit" className="btn btn-main bg-blue py-2 ttu">
                         Submit
                     </button>
                 }
             </form>
+            {
+                loading &&
+                <div className="loader-container text-center">
+                    <WaitLoader variant="large" />
+                    Signing in...
+                </div>
+            }
         </>
     );
 }
