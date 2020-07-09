@@ -54,9 +54,12 @@ const AppNavbar = () => {
                             <AppLink href="/forum/skills" className={`mr-3 nav-link ${router.pathname.includes('/forum/skills') ? 'font-weight-bold text-white' : ''}`} >
                                 Skills
                             </AppLink>
-                            {/* <AppLink href="#" className="mr-3 nav-link">
-                                CV
-                            </AppLink> */}
+                            {
+                                (hasResponse && user) &&
+                                <AppLink href="/resume" className="mr-3 nav-link">
+                                    CV
+                                </AppLink>
+                            }
                         </Nav>
                         {
                             hasResponse &&

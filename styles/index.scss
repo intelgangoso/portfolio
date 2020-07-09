@@ -44,6 +44,10 @@ html {
   height: 100%;
 }
 
+.pointer-none { 
+  background-color: #fff !important;
+}
+
 #__next {
   height: 100%;
 }
@@ -893,4 +897,12 @@ html {
       margin-right: 0 !important;
     }
   }
+}
+
+.editable-input {
+  height: 38px;
+}
+
+.editable-textarea {
+  height: 120px;
 }
