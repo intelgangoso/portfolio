@@ -5,16 +5,26 @@ import {ToastContainer} from 'react-toastify';
 export default function BaseLayout({ children, page = '' }) {
 
     const isHomepage = () => page === "Home";
+    const isResume = () => page === "Resume";
 
     return (
         <div className="portfolio-app">
             <Navbar />
             {isHomepage() && <Hero />}
-            <div className="page-containers">
-                <div className="container">
+            {
+                !isResume() &&
+                <div className="page-containers">
+                    <div className="container">
+                        {children}
+                    </div>
+                </div>
+            }
+            {
+                isResume() &&
+                <div>
                     {children}
                 </div>
-            </div>
+            }
             <ToastContainer />
             <footer id="sticky-footer" className="py-4 bg-black text-white-50 py-3">
                 <div className="container text-center">

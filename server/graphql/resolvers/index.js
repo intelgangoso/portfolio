@@ -74,7 +74,6 @@ exports.forumMutations = {
         const category = await ctx.models.ForumCategory.getBySlug(
             input.forumCategory
         );
-        debugger
         input.forumCategory = category._id;
         const topic = await ctx.models.Topic.create(input);
         return topic;

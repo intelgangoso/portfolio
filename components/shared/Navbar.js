@@ -57,7 +57,7 @@ const AppNavbar = () => {
                             {
                                 (hasResponse && user) &&
                                 <AppLink href="/resume" className="mr-3 nav-link">
-                                    CV
+                                    Resume
                                 </AppLink>
                             }
                         </Nav>

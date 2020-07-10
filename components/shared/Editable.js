@@ -30,7 +30,7 @@ const Editable = ({
   };
 
   return (
-    <section {...props}>
+    <div {...props}>
       {isEditing ? (
         <div
           onBlur={() => setEditing(false)}
@@ -40,7 +40,7 @@ const Editable = ({
         </div>
       ) : (
         <div
-          className={`rounded py-2 px-3 text-gray-700 leading-tight whitespace-pre-wrap hover:shadow-outline editable-${type}`}
+          className={`rounded px-3 text-gray-700 leading-tight whitespace-pre-wrap hover:shadow-outline editable-${type}`}
           onClick={() => setEditing(true)}
         >
           <span className={`${text ? "text-black" : "text-gray-500"}`}>
@@ -48,7 +48,7 @@ const Editable = ({
           </span>
         </div>
       )}
-    </section>
+    </div>
   );
 };
 
