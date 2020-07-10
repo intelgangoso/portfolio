@@ -106,7 +106,7 @@ const Resume = withAuth(() => {
                         }
                     </Pdf>
                     <div ref={ref}>
-                        <div className="card bg-none text-center rounded-0">
+                        <div className="card bg-none text-center border-top-0 rounded-0" style={{marginLeft: "-15px", marginTop: "-15px"}}>
                             <div className="card-header bg-dark rounded-0">
                                 <div className="row">
                                     <ImageUploading onChange={onChange}>
