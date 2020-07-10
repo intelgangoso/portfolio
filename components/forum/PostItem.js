@@ -19,11 +19,11 @@ export default function PostItem({post, onReply, className = '', canCreate = fal
                                                     <div className="main-avatar">
                                                         <img
                                                             className="avatar subtle-shadow"
-                                                            src={post.user.avatar} />
+                                                            src={post.avatar ? post.avatar : '/user.png'} />
                                                     </div>
                                                 </div>
                                                 <div className="date-container">
-                                                    <div className="username">{post.user.username}</div>
+                                                    <div className="username">{post.username}</div>
                                                     {
                                                         post.createdAt &&
                                                         <small className="date">{fromNow(post.createdAt)}</small>
