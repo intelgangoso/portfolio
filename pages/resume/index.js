@@ -106,7 +106,7 @@ const Resume = withAuth(() => {
                         }
                     </Pdf>
                     <div ref={ref}>
-                        <div className="card bg-none text-center border-top-0 rounded-0" style={{marginLeft: "-15px", marginTop: "-15px"}}>
+                        <div className="card bg-none text-center border-top-0 rounded-0" style={{marginLeft: "-15px", marginTop: "-30px"}}>
                             <div className="card-header bg-dark rounded-0">
                                 <div className="row">
                                     <ImageUploading onChange={onChange}>
@@ -775,28 +775,6 @@ const Resume = withAuth(() => {
                                                                                 onChange={e => setJobTitle1(e.target.value)}/>
                                                                     </Editable>
                                                                 </h6>
-                                                            </div>
-                                                            <div className="col-md-8">
-                                                                <h6>
-                                                                    <Editable
-                                                                        text={companyName1} 
-                                                                        placeholder="Company"
-                                                                        childRef={inputRef}
-                                                                        type="input">
-                                                                            <input
-                                                                                ref={inputRef}
-                                                                                type="text"
-                                                                                name="companyName1"
-                                                                                className="col-md-12 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" 
-                                                                                placeholder="Company"
-                                                                                value={companyName1}
-                                                                                onChange={e => setCompanyName1(e.target.value)}/>
-                                                                    </Editable>
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className="content-item row col-md-12 px-0 mx-0 text-left">
-                                                            <div className="col-md-4">
                                                                 <small>
                                                                     <Editable
                                                                         text={workYear1} 
@@ -815,7 +793,23 @@ const Resume = withAuth(() => {
                                                                 </small>
                                                             </div>
                                                             <div className="col-md-8">
-                                                                <div>
+                                                                <h6>
+                                                                    <Editable
+                                                                        text={companyName1} 
+                                                                        placeholder="Company"
+                                                                        childRef={inputRef}
+                                                                        type="input">
+                                                                            <input
+                                                                                ref={inputRef}
+                                                                                type="text"
+                                                                                name="companyName1"
+                                                                                className="col-md-12 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" 
+                                                                                placeholder="Company"
+                                                                                value={companyName1}
+                                                                                onChange={e => setCompanyName1(e.target.value)}/>
+                                                                    </Editable>
+                                                                </h6>
+                                                                <small>
                                                                     <Editable
                                                                         text={workDescription1} 
                                                                         placeholder="Job Description"
@@ -830,7 +824,7 @@ const Resume = withAuth(() => {
                                                                                 value={workDescription1}
                                                                                 onChange={e => setWorkDescription1(e.target.value)}/>
                                                                     </Editable>
-                                                                </div>
+                                                                </small>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -853,28 +847,6 @@ const Resume = withAuth(() => {
                                                                                 onChange={e => setJobTitle2(e.target.value)}/>
                                                                     </Editable>
                                                                 </h6>
-                                                            </div>
-                                                            <div className="col-md-8">
-                                                                <h6>
-                                                                    <Editable
-                                                                        text={companyName2} 
-                                                                        placeholder="Company"
-                                                                        childRef={inputRef}
-                                                                        type="input">
-                                                                            <input
-                                                                                ref={inputRef}
-                                                                                type="text"
-                                                                                name="companyName2"
-                                                                                className="col-md-12 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" 
-                                                                                placeholder="Company"
-                                                                                value={companyName2}
-                                                                                onChange={e => setCompanyName2(e.target.value)}/>
-                                                                    </Editable>
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className="content-item row col-md-12 px-0 mx-0 text-left">
-                                                            <div className="col-md-4">
                                                                 <small>
                                                                     <Editable
                                                                         text={workYear2} 
@@ -893,7 +865,23 @@ const Resume = withAuth(() => {
                                                                 </small>
                                                             </div>
                                                             <div className="col-md-8">
-                                                                <div>
+                                                                <h6>
+                                                                    <Editable
+                                                                        text={companyName2} 
+                                                                        placeholder="Company"
+                                                                        childRef={inputRef}
+                                                                        type="input">
+                                                                            <input
+                                                                                ref={inputRef}
+                                                                                type="text"
+                                                                                name="companyName2"
+                                                                                className="col-md-12 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" 
+                                                                                placeholder="Company"
+                                                                                value={companyName2}
+                                                                                onChange={e => setCompanyName2(e.target.value)}/>
+                                                                    </Editable>
+                                                                </h6>
+                                                                <small>
                                                                     <Editable
                                                                         text={workDescription2} 
                                                                         placeholder="Job Description"
@@ -908,7 +896,7 @@ const Resume = withAuth(() => {
                                                                                 value={workDescription2}
                                                                                 onChange={e => setWorkDescription2(e.target.value)}/>
                                                                     </Editable>
-                                                                </div>
+                                                                </small>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -931,28 +919,6 @@ const Resume = withAuth(() => {
                                                                                 onChange={e => setJobTitle3(e.target.value)}/>
                                                                     </Editable>
                                                                 </h6>
-                                                            </div>
-                                                            <div className="col-md-8">
-                                                                <h6>
-                                                                    <Editable
-                                                                        text={companyName3} 
-                                                                        placeholder="Company"
-                                                                        childRef={inputRef}
-                                                                        type="input">
-                                                                            <input
-                                                                                ref={inputRef}
-                                                                                type="text"
-                                                                                name="companyName3"
-                                                                                className="col-md-12 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" 
-                                                                                placeholder="Company"
-                                                                                value={companyName3}
-                                                                                onChange={e => setCompanyName3(e.target.value)}/>
-                                                                    </Editable>
-                                                                </h6>
-                                                            </div>
-                                                        </div>
-                                                        <div className="content-item row col-md-12 px-0 mx-0 text-left">
-                                                            <div className="col-md-4">
                                                                 <small>
                                                                     <Editable
                                                                         text={workYear3} 
@@ -971,7 +937,23 @@ const Resume = withAuth(() => {
                                                                 </small>
                                                             </div>
                                                             <div className="col-md-8">
-                                                                <div>
+                                                                <h6>
+                                                                    <Editable
+                                                                        text={companyName3} 
+                                                                        placeholder="Company"
+                                                                        childRef={inputRef}
+                                                                        type="input">
+                                                                            <input
+                                                                                ref={inputRef}
+                                                                                type="text"
+                                                                                name="companyName3"
+                                                                                className="col-md-12 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline border-blue-300" 
+                                                                                placeholder="Company"
+                                                                                value={companyName3}
+                                                                                onChange={e => setCompanyName3(e.target.value)}/>
+                                                                    </Editable>
+                                                                </h6>
+                                                                <small>
                                                                     <Editable
                                                                         text={workDescription3} 
                                                                         placeholder="Job Description"
@@ -986,7 +968,7 @@ const Resume = withAuth(() => {
                                                                                 value={workDescription3}
                                                                                 onChange={e => setWorkDescription3(e.target.value)}/>
                                                                     </Editable>
-                                                                </div>
+                                                                </small>
                                                             </div>
                                                         </div>
                                                     </div>
